@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Leo Bootstrap Resume</title>
+    <!-- Bootstrap core CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+  </head>
+<style>
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}    
+.wrap .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("img/banner-3.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.bg p{
+	position:absolute;
+	z-index:30;
+	color:#FFF;
+	top:100px;
+	font-size:36px;
+
+}             
+ 
+</style>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Leo Liu Resume</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="bootstrap.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+   
+
+ <!-- Carousel
+    ================================================== -->
+    <div style="height:500px;margin:50px 0px; background-color:#333;" >
+    <!--<img src="img/banner-3.jpg" id="sence" style="position:absolute;display:inline-block;width:100%;height:500px;text-align:center;" />-->
+   <div class="wrap">
+              <div class="bg"></div>
+              
+   </div>   
+
+     <div style="position:absolute;height:500px; width:100%;background-color:#333;opacity:0.8;top: 50px;
+  left: 0;z-index:1;">
+         <div style="position:absolute;height:500px; width:100%;top: 0px;
+  left: 0;background:url(img/pattern-bg.png);z-index:2;">
+            
+         </div>
+     </div>
+            <h1 class="fadin-1" style=" position:absolute;font-size:7em; color:#FFF; left:30%; top:-30%;opacity:1;z-index:40;">Profilo</h1>
+            <h1 class="fadin-2" style=" position:absolute;font-size:7em; color:#FFF; left:40%; top:-60%;  text-align:center; vertical-align:middle;line-height:20px;z-index:40;">X</h1>
+            <h1 class="fadin-3" style=" position:absolute;font-size:5em; color:#FFF; left:40%; bottom:-50%;text-align:center; vertical-align:middle;line-height:180px;z-index:40;"><span class="glyphicon glyphicon-align-justify"></span></h1>
+            
+     <div style="clear:both;"></div>
+    </div>
+  
+    <!-- /.carousel -->
+
+
+
+ <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right" >
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Show Menu</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Contact Me!</h1>
+            <p>Mon-Sun day </p>
+            <p>08:00am ~ 11:00pm </p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-lg-6">
+              <dl class="dl-horizontal">
+             	<dt>Age</dt>
+                 <dd>31</dd>
+               <dt>Nationality</dt>
+                <dd>台灣</dd>
+               <dt>Location</dt>
+                <dd>台灣-桃園</dd>
+               <dt>Tel</dt>
+                <dd>0431288796</dd>
+               <dt>Mail</dt>
+                <dd>luo74128@hotmail.com</dd>
+               <dt>Address</dt>
+                <dd>5 dianella place yallambie,Melborune,VIC</dd>
+               </dl>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+             <div class="col-xs-12 col-lg-6">
+               <div class="input-group input-groupo-lg">
+                 <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                 <input type="text" class="form-control" name="ContactName" placeholder="Name">
+               </div>
+               <div class="input-group input-groupo-lg">
+                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                 <input type="text" class="form-control" name="ContactMail" placeholder="Mail">
+               </div>
+               <div class="input-group input-groupo-lg">
+                 <span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></span>
+                 <input type="text" class="form-control" name="ContactPhone" placeholder="Phone">
+               </div>
+               <div class="input-groupo-lg">
+               <button type="submit" class="btn btn-default">Submit</button>
+               </div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+          
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">SKILL TOOL</a>
+            <a href="#" class="list-group-item">PHP</a>
+            <a href="#" class="list-group-item">JAVASCRIPT</a>
+            <a href="#" class="list-group-item">JQUERY</a>
+            <a href="#" class="list-group-item">CSS3</a>
+            <a href="#" class="list-group-item">HTML5</a>
+            <a href="#" class="list-group-item">BOOTSTRAP</a>
+            <a href="#" class="list-group-item">WORDPRESS</a>
+            <a href="#" class="list-group-item">AJAX</a>
+            <a href="#" class="list-group-item">CODEIGNITER</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+     
+      <hr>
+      
+      
+      
+
+      <footer>
+        <p>&copy; Company 2017 Leo Liu Resume.</p>
+      </footer>
+
+ </div><!--/.container-->
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+       $(document).ready(function () {
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+      });
+    });
+    </script>
+    <script>
+$(document).ready(function () {
+var lFollowX = 0,
+lFollowY = 0,
+x = 0,
+y = 0,
+friction = 1 / 30;
+ 
+function moveBackground() {
+x += (lFollowX - x) * friction;
+y += (lFollowY - y) * friction;
+ 
+translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+ 
+$('.bg').css({
+  '-webit-transform': translate,
+  '-moz-transform': translate,
+  'transform': translate
+});
+ 
+window.requestAnimationFrame(moveBackground);
+}
+ 
+$(window).on('mousemove click', function(e) {
+ 
+var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+lFollowY = (10 * lMouseY) / 100;
+ 
+});
+ 
+moveBackground();   
+		}); 
+	</script>
+     
+    <script>
+	$(document).ready(function () {
+       $('.fadin-1').fadeIn(100);
+	   $('.fadin-1').animate({top:"10%",opacity:"0.8"},1500);
+	   
+	   $('.fadin-2').fadeIn(100);
+	   $('.fadin-2').animate({top:"40%",opacity:"0.8"},1500);
+	   
+	   $('.fadin-3').fadeIn(100);
+	   $('.fadin-3').animate({bottom:"20%",opacity:"0.8"},1500);
+	   //$('.fadin-1').fadeOut(1000);
+    });
+	</script>
+  </body>
+</html>
+
+
