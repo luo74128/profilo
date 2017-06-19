@@ -53,12 +53,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Leo Liu Resume</a>
+          <a class="navbar-brand" data-toggle="modal" data-target="#aa">Leo Liu Introduct</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="bootstrap.html">Home</a></li>
+            <!--<li><a href="#about">About</a></li>-->
             <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -83,9 +83,9 @@
             
          </div>
      </div>
-            <h1 class="fadin-1" style=" position:absolute;font-size:5em; color:#FFF; left:30%; top:-30%;opacity:1;z-index:40;">Profilo</h1>
-            <h1 class="fadin-2" style=" position:absolute;font-size:5em; color:#FFF; left:40%; top:-60%;  text-align:center; vertical-align:middle;line-height:20px;z-index:40;">X</h1>
-            <h1 class="fadin-3" style=" position:absolute;font-size:5em; color:#FFF; left:40%; bottom:-50%;text-align:center; vertical-align:middle;line-height:180px;z-index:40;"><span class="glyphicon glyphicon-align-justify"></span></h1>
+            <h1 class="fadin-1" style=" position:absolute;font-size:5em; color:#FFF; left:40%; top:-30%;opacity:1;z-index:40;">portfolio</h1>
+            <h1 class="fadin-2" style=" position:absolute;font-size:5em; color:#FFF; left:51%; top:-60%;  text-align:center; vertical-align:middle;line-height:20px;z-index:40;">X</h1>
+            <h1 class="fadin-3" style=" position:absolute;font-size:5em; color:#FFF; left:50%; bottom:-50%;text-align:center; vertical-align:middle;line-height:180px;z-index:40;"><span class="glyphicon glyphicon-align-justify"></span></h1>
             
      <div style="clear:both;"></div>
     </div>
@@ -162,7 +162,40 @@
           </div>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
-     
+         <!--顯示Introduct dialog START-->
+     <div class="modal fade"role="dialog" id="aa" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     	<div class="modal-dialog modal-lg">
+         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Leo's Introduct</h4>
+         </div>
+         <div class="modal-body">
+             <div class="media">
+                    <a class="media-left media-middle" href="#">
+                     <img src="img/logo.jpg" alt="" />
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><br>
+                        Hello,我是里歐. 我來自台灣,2008 年畢業於中華大學主修資訊工程學系,
+                        我是一個wibsite 開發工程師.一直以來我使用PHP作為我主要發語言並且框架使用Codelgniter,
+                        搭配MySql資料庫制做網站後台系統。
+                        我非常喜歡做前端開發,因此熟悉Font-End 開發流程 透過HTML5+CSS3+JAVASCRIPT 製作前端網頁。
+                        目前正持續學習：Wordpress templates, plugins的開發技巧。
+                        我對WebSite開發非常有熱情,希望能向貴公司學習來增進我自己。
+                        Thank You ,Leo
+                        </h4>
+                    </div>
+                </div>
+          </div>
+            
+         </div>
+       </div>
+      </div>
+     <!--顯示Introduct dialog END--> 
       <hr>
       
       
@@ -193,54 +226,56 @@
     });
     </script>
     <script>
-$(document).ready(function () {
-var lFollowX = 0,
-lFollowY = 0,
-x = 0,
-y = 0,
-friction = 1 / 30;
- 
-function moveBackground() {
-x += (lFollowX - x) * friction;
-y += (lFollowY - y) * friction;
- 
-translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
- 
-$('.bg').css({
-  '-webit-transform': translate,
-  '-moz-transform': translate,
-  'transform': translate
-});
- 
-window.requestAnimationFrame(moveBackground);
-}
- 
-$(window).on('mousemove click', function(e) {
- 
-var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-lFollowY = (10 * lMouseY) / 100;
- 
-});
- 
-moveBackground();   
-		}); 
+	$(document).ready(function () {
+	var lFollowX = 0,
+	lFollowY = 0,
+	x = 0,
+	y = 0,
+	friction = 1 / 30;
+	 
+	function moveBackground() {
+	x += (lFollowX - x) * friction;
+	y += (lFollowY - y) * friction;
+	 
+	translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+	 
+	$('.bg').css({
+	  '-webit-transform': translate,
+	  '-moz-transform': translate,
+	  'transform': translate
+	});
+	 
+	window.requestAnimationFrame(moveBackground);
+	}
+	 
+	$(window).on('mousemove click', function(e) {
+	 
+	var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+	var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+	lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+	lFollowY = (10 * lMouseY) / 100;
+	 
+	});
+	 
+	moveBackground();   
+			}); 
 	</script>
      
+   
     <script>
 	$(document).ready(function () {
        $('.fadin-1').fadeIn(100);
-	   $('.fadin-1').animate({top:"10%",opacity:"0.8"},1500);
+	   $('.fadin-1').animate({top:"17%",opacity:"0.8"},1500);
 	   
 	   $('.fadin-2').fadeIn(100);
 	   $('.fadin-2').animate({top:"40%",opacity:"0.8"},1500);
 	   
 	   $('.fadin-3').fadeIn(100);
-	   $('.fadin-3').animate({bottom:"20%",opacity:"0.8"},1500);
+	   $('.fadin-3').animate({bottom:"22%",opacity:"0.8"},1500);
 	   //$('.fadin-1').fadeOut(1000);
     });
 	</script>
+    
   </body>
 </html>
 
