@@ -94,7 +94,7 @@ footer {
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+html,body {
 	overflow-x:hidden;
   padding-bottom: 40px;
   color: #5a5a5a;
