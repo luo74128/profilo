@@ -95,7 +95,7 @@ footer {
 /* Padding below the footer and lighter body text */
 
 html,body {
-	overflow-x:hidden;
+  overflow-x:hidden;
   padding-bottom: 40px;
   color: #5a5a5a;
 }
@@ -132,7 +132,7 @@ html,body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  min-height: 500px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -142,16 +142,17 @@ html,body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  min-height: 500px;
   /*background-color: #777;*/
+  
 }
 .carousel-inner > .item > img {
-  position: absolute;
+ position: absolute;
   top: 0;
   left: 0;
-  /*min-width: 100%;*/
-  margin:0 0 0 10%;
-  height: 500px;
+  /*width: 100%;*/
+  margin: 0 0 0 10%;
+  height:500px;
 }
 
 
@@ -231,3 +232,22 @@ html,body {
 .list-group-item{padding:20px;}
 .dl-horizontal dt{padding-bottom:10px; padding-right:-520px; color:#337ab7; }
 .input-groupo-lg{padding:10px;}
+/*	文字輪播 */
+.scrollText ul,.scrollText li{margin:0;padding:0}
+#scrollDiv{ position:absolute;overflow:hidden;z-index:999;left:30%;}
+.scrollText{
+	position:relative;font-size:3em; color:#FFF; text-align:center; vertical-align:middle;z-index:999;"
+	width:300px;height:75px;min-height:75px;line-height:25px;}
+.scrollText li{height:40px;padding-left:10px;}
+.up{ margin-left:310px; width:50px; height:50px; background:#F90;}
+.down{ margin:0 0 0 310px; zoom:1; width:50px; height:50px; background:#960;}
+
+
+.clearfix::after { 
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+    zoom: 1; /*IE6, IE7*/ 
+}

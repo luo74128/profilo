@@ -11,8 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+    <script type="text/javascript" src="http://www.css88.com/tool/css3Preview/jquery-1.4.2.min.js"></script>
   </head>
 <style>
 .wrap {
@@ -41,6 +41,9 @@
 
 }             
  
+ 
+ 
+
 </style>
   <body>
 
@@ -57,7 +60,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="bootstrap.html">Home</a></li>
             <!--<li><a href="#about">About</a></li>-->
             <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
@@ -83,9 +86,21 @@
             
          </div>
      </div>
-            <h1 class="fadin-1" style=" position:absolute;font-size:5em; color:#FFF; left:40%; top:-30%;opacity:1;z-index:40;">portfolio</h1>
-            <h1 class="fadin-2" style=" position:absolute;font-size:5em; color:#FFF; left:51%; top:-60%;  text-align:center; vertical-align:middle;line-height:20px;z-index:40;">X</h1>
-            <h1 class="fadin-3" style=" position:absolute;font-size:5em; color:#FFF; left:50%; bottom:-50%;text-align:center; vertical-align:middle;line-height:180px;z-index:40;"><span class="glyphicon glyphicon-align-justify"></span></h1>
+            <h1 class="fadin-1" style=" position:absolute;font-size:1.5em; color:#FFF; left:45%; top:-30%;opacity:0.5;z-index:40;">Contact Leo Liu</h1>
+<div id="scrollDiv">
+<div class="scrollText">
+  <ul>
+    <li>Call me :</li>
+    <li>0431-288-796</li>
+    <li>Send the Email :</li>
+    <li>luo74128@hotmail.com</li>
+    <li>OR</li>
+    <li>leave your message.</li>
+  </ul>
+</div>
+</div>
+
+            <h1 class="fadin-3" style=" position:absolute;font-size:2em; color:#FFF; left:50%; bottom:-50%;opacity:0.5;text-align:center; vertical-align:middle;line-height:180px;z-index:40;"><span class="glyphicon glyphicon-align-justify"></span></h1>
             
      <div style="clear:both;"></div>
     </div>
@@ -196,6 +211,9 @@
        </div>
       </div>
      <!--顯示Introduct dialog END--> 
+     
+     
+     
       <hr>
       
       
@@ -218,6 +236,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.textSlider.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+            $("#scrollDiv").textSlider({line:2,speed:500,timer:2000});
+            //$("#scrollDiv2").textSlider({line:2,speed:500,timer:1000});
+    });
+    </script>
+
+	
 	<script>
        $(document).ready(function () {
       $('[data-toggle="offcanvas"]').click(function () {
@@ -265,17 +292,21 @@
     <script>
 	$(document).ready(function () {
        $('.fadin-1').fadeIn(100);
-	   $('.fadin-1').animate({top:"17%",opacity:"0.8"},1500);
+	   $('.fadin-1').animate({top:"23%",opacity:"0.8"},1500);
 	   
 	   $('.fadin-2').fadeIn(100);
 	   $('.fadin-2').animate({top:"40%",opacity:"0.8"},1500);
 	   
 	   $('.fadin-3').fadeIn(100);
-	   $('.fadin-3').animate({bottom:"22%",opacity:"0.8"},1500);
+	   $('.fadin-3').animate({bottom:"25%",opacity:"0.8"},1500);
 	   //$('.fadin-1').fadeOut(1000);
+	    $('#scrollDiv').fadeIn(100);
+	   $('#scrollDiv').animate({top:"38%",opacity:"0.8"},1500);
+	   
     });
 	</script>
     
+	
   </body>
 </html>
 
