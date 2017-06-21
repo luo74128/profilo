@@ -47,6 +47,8 @@ footer {
  */
  
 @media screen and (max-width: 767px) {
+  .body{font-size:10px;}
+  .scrollText{font-size:1em;}
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -192,6 +194,8 @@ html,body {
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
+	.body{font-size:10px;}
+	.scrollText{font-size:1em;}
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
@@ -234,10 +238,13 @@ html,body {
 .input-groupo-lg{padding:10px;}
 /*	文字輪播 */
 .scrollText ul,.scrollText li{margin:0;padding:0}
-#scrollDiv{ position:absolute;overflow:hidden;z-index:999;left:30%;}
+#scrollDiv{  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); display:inline-block;overflow:hidden;z-index:999;text-align:center;height:200px;}
 .scrollText{
 	position:relative;font-size:3em; color:#FFF; text-align:center; vertical-align:middle;z-index:999;"
-	width:300px;height:75px;min-height:75px;line-height:25px;}
+	width:150px;height:75px;min-height:75px;line-height:25px;overflow:hidden;}
 .scrollText li{height:40px;padding-left:10px;}
 .up{ margin-left:310px; width:50px; height:50px; background:#F90;}
 .down{ margin:0 0 0 310px; zoom:1; width:50px; height:50px; background:#960;}
