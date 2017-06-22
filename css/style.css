@@ -49,6 +49,7 @@ footer {
 @media screen and (max-width: 767px) {
 	.body{font-size:7px;}
 	.scrollText{font-size:0.6em;}
+	.jumbotron h1{font-size:2em;}
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -196,6 +197,7 @@ html,body {
 @media (min-width: 768px) {
 	.body{font-size:7px;}
 	.scrollText{font-size:0.6em;}
+	.jumbotron h1{font-size:2em;}
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
@@ -229,6 +231,7 @@ html,body {
 @media (min-width: 992px) {
 	.body{font-size:7px;}
 	.scrollText{font-size:0.6em;}
+	.jumbotron h1{font-size:2em;}
 
   .featurette-heading {
     margin-top: 120px;
@@ -252,7 +255,32 @@ html,body {
 .up{ margin-left:310px; width:50px; height:50px; background:#F90;}
 .down{ margin:0 0 0 310px; zoom:1; width:50px; height:50px; background:#960;}
 
+/* 背景位移 */
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}    
+.wrap .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("../img/banner-3.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.bg p{
+	position:absolute;
+	z-index:30;
+	color:#FFF;
+	top:100px;
+	font-size:36px;
 
+}   
 .clearfix::after { 
     content: "."; 
     display: block; 

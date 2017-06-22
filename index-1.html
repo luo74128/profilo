@@ -24,12 +24,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Leo Liu Resume</a>
+          <a class="navbar-brand" data-toggle="modal" href="#" data-target="#aa">Leo Liu Introduct</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <!--<li><a href="#about">About</a></li>-->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -40,28 +40,29 @@
 
  <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="row carousel slide "  data-ride="carousel" >
+    <div id="myCarousel" class="row carousel slide"  data-ride="carousel" >
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner" role="listbox"  style="background-color:#ebeae8;">
-        <div class="item active">
+        <div class="item active" >
           <!--<img src="img/banner.png" width="600" alt="First slide">-->
-          <img src="img/banner-3.jpg" alt="">
+          <img src="img/banner-3.jpg"  alt="">
           <div class="container" >
-            <div class="carousel-caption">
-              <!--<h1 style="color:#323232;font-size:6em;padding-bottom:30px;">LE  o</h1>
+            <!--<div class="carousel-caption">
+              <h1 style="color:#323232;font-size:6em;padding-bottom:30px;">LE  o</h1>
               <p>Hello my name is Leo . I am a WebSite Designer.</p>
-            	<p>I'm good as  PHP / CodeIgniter / CSS3 / HTML / JS / Jquery</p>-->
-            </div>
+            	<p>I'm good as  PHP / CodeIgniter / CSS3 / HTML / JS / Jquery</p>
+            </div>-->
           </div>
         </div>
+        
         <div class="item" style="background-color:#ebeae8;">
           <div class="container">
             <div class="carousel-caption" >
-              <h1 style="color:#323232;font-size:6em;padding-bottom:30px;">LE  o</h1>
+              <h1 style="color:#323232;font-size:6em;padding-bottom:80px;">LE  o</h1>
               <p>Hello my name is Leo . I am a WebSite Designer.</p>
             	<p>I'm good at  PHP / CodeIgniter / CSS3 / HTML / JS / Jquery</p>
               <!--<p>Hello,我是里歐. 我來自台灣,2008 年畢業於中華大學主修資訊工程學系,
@@ -70,7 +71,7 @@
                     我非常喜歡做前端開發,因此熟悉Font-End 開發流程 透過HTML5+CSS3+JAVASCRIPT 製作前端網頁。
                     目前正持續學習：Wordpress templates, plugins的開發技巧。
                     我對WebSite開發非常有熱情。Thank You ,Leo</p>-->
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">see more</a></p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">see more</a></p>-->
             </div>
           </div>
         </div>
@@ -204,8 +205,9 @@
           </div>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
+     <!-- 測試dialog ＳＴＡＲＴ
       <button type="button"  class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Click me</button>
-		<a data-toggle="modal" href="remote.html" data-target="#aa">Click me</a>
+		<a data-toggle="modal" href="contact.html" data-target="#aa">Click me</a>
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       	<div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -222,9 +224,51 @@
       </div>
       </div>
       </div>
-      <div  class="modal fade" id="modal" role="dialog">Click Me</div>
+     <div class="modal fade"role="dialog" id="aa" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     	<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        
+        </div>
+        </div>
+     </div>
+      測試dialog ＥＮＤ -->
       
-      
+     <!--顯示Introduct dialog START-->
+     <div class="modal fade"role="dialog" id="aa" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     	<div class="modal-dialog modal-lg">
+         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Leo's Introduct</h4>
+         </div>
+         <div class="modal-body">
+             <div class="media">
+                    <a class="media-left media-middle" href="#">
+                     <img src="img/logo.jpg" alt="" />
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><br>
+                        Hello,我是里歐. 我來自台灣,2008 年畢業於中華大學主修資訊工程學系,
+                        我是一個wibsite 開發工程師.一直以來我使用PHP作為我主要發語言並且框架使用Codelgniter,
+                        搭配MySql資料庫制做網站後台系統。
+                        我非常喜歡做前端開發,因此熟悉Font-End 開發流程 透過HTML5+CSS3+JAVASCRIPT 製作前端網頁。
+                        目前正持續學習：Wordpress templates, plugins的開發技巧。
+                        我對WebSite開發非常有熱情,希望能向貴公司學習來增進我自己。
+                        Thank You ,Leo
+                        </h4>
+                    </div>
+                </div>
+          </div>
+            
+         </div>
+       </div>
+      </div>
+     <!--顯示Introduct dialog END-->
+
+     <!-- <canvas></canvas>-->
       <hr>
       <footer>
         <p>&copy; Company 2017 Leo Liu Resume.</p>

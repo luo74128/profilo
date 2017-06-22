@@ -14,37 +14,6 @@
 	<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
     <script type="text/javascript" src="http://www.css88.com/tool/css3Preview/jquery-1.4.2.min.js"></script>
   </head>
-<style>
-.wrap {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}    
-.wrap .bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: url("img/banner-3.jpg") no-repeat center center;
-  background-size: cover;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.bg p{
-	position:absolute;
-	z-index:30;
-	color:#FFF;
-	top:100px;
-	font-size:36px;
-
-}             
- 
- 
- 
-
-</style>
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -88,7 +57,7 @@
      </div>
             
 <div id="scrollDiv" >
- <h1 class="fadin-1" style="font-size:1.5em; width:200px;left:50%;color:#FFF;  padding:20px;margin:0 auto; ">Contact Leo Liu</h1>
+ <h1 style="font-size:1.5em; width:200px;left:50%;color:#FFF;  padding:20px;margin:0 auto; ">Contact Leo Liu</h1>
     <div class="scrollText">
       <ul>
         <li>Call me :</li>
@@ -202,8 +171,6 @@
                         搭配MySql資料庫制做網站後台系統。
                         我非常喜歡做前端開發,因此熟悉Font-End 開發流程 透過HTML5+CSS3+JAVASCRIPT 製作前端網頁。
                         目前正持續學習：Wordpress templates, plugins的開發技巧。
-                        我對WebSite開發非常有熱情,希望能向貴公司學習來增進我自己。
-                        Thank You ,Leo
                         </h4>
                     </div>
                 </div>
@@ -239,74 +206,33 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jQuery.textSlider.js"></script>
-	<script type="text/javascript">
-    $(document).ready(function(){
-            $("#scrollDiv").textSlider({line:2,speed:500,timer:2000});
-            //$("#scrollDiv2").textSlider({line:2,speed:500,timer:1000});
-    });
-    </script>
-
-	
+    <script type="text/javascript" src="js/backgroundmove.js"></script>
 	<script>
-       $(document).ready(function () {
-      $('[data-toggle="offcanvas"]').click(function () {
-        $('.row-offcanvas').toggleClass('active')
-      });
-    });
-    </script>
-    <script>
-	$(document).ready(function () {
-	var lFollowX = 0,
-	lFollowY = 0,
-	x = 0,
-	y = 0,
-	friction = 1 / 30;
-	 
-	function moveBackground() {
-	x += (lFollowX - x) * friction;
-	y += (lFollowY - y) * friction;
-	 
-	translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-	 
-	$('.bg').css({
-	  '-webit-transform': translate,
-	  '-moz-transform': translate,
-	  'transform': translate
-	});
-	 
-	window.requestAnimationFrame(moveBackground);
-	}
-	 
-	$(window).on('mousemove click', function(e) {
-	 
-	var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-	var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-	lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-	lFollowY = (10 * lMouseY) / 100;
-	 
-	});
-	 
-	moveBackground();   
-			}); 
-	</script>
-     
-   
-    <script>
-	$(document).ready(function () {
-       $('.fadin-1').fadeIn(100);
-	   $('.fadin-1').animate({top:"23%",opacity:"0.8"},1500);
-	   
-	   $('.fadin-2').fadeIn(100);
-	   $('.fadin-2').animate({top:"40%",opacity:"0.8"},1500);
-	   
-	   $('.fadin-3').fadeIn(100);
-	   $('.fadin-3').animate({bottom:"25%",opacity:"0.8"},1500);
-	   //$('.fadin-1').fadeOut(1000);
+	$(document).ready(function () { //文字飛入
 	    $('#scrollDiv').fadeIn(100);
 	   $('#scrollDiv').animate({top:"38%",opacity:"0.8"},1500);
 	   
     });
 	</script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+            $("#scrollDiv").textSlider({line:2,speed:500,timer:2000}); //輪播文字
+            //$("#scrollDiv2").textSlider({line:2,speed:500,timer:1000});
+    });
+    </script>
+	<script>
+       $(document).ready(function () {
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active') //顯示隱藏側欄
+      });
+    });
+    </script>
+    <script>
+	$(document).ready(function () {
+		$(".bg").moveBackground(); //背景位移效果
+	}); 
+	</script>
+    
     
 	
   </body>
